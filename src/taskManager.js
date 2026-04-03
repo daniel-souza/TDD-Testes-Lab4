@@ -14,11 +14,9 @@ export function resetId() {
 
 export function createTask(title) {
     if(validateTitle(title) == false) return null;
-    let task = {
-        id: id,
+    return {
+        id: id++,
         title: title.trim(),
         completed: false
     };
-    id++;
-    return task;
 }
