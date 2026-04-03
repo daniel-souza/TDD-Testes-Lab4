@@ -5,3 +5,11 @@ export function validateTitle(title) {
     if(title === '') return false;
     return true;
 }
+
+export function resetId() {
+
+}
+
+export function createTask(title) {
+
+}

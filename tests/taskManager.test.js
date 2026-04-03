@@ -88,4 +88,9 @@ describe('createTask', () => {
 
     expect(task.title).toBe('Título com espaços');
   });
+  
+  it('título inválido retorna null', () => {
+    let result = createTask('');
+    expect(result).toBe(null);
+  });
 });
